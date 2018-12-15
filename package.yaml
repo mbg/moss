@@ -1,0 +1,36 @@
+name:                moss
+version:             0.1.0.0
+github:              "mbg/moss"
+license:             MIT
+author:              "Michael B. Gale"
+maintainer:          "m.gale@warwick.ac.uk"
+copyright:           "Copyright (c) 2018 Michael B. Gale"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+synopsis:            Haskell client for Moss
+category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on Github at <https://github.com/mbg/moss#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- network
+- network-simple
+- conduit-extra
+- mtl
+- bytestring
+- unix-compat
+
+default-extensions:
+- RecordWildCards
+- OverloadedStrings
+
+library:
+  source-dirs: src

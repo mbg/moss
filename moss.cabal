@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 5d923efaf8ff4c5f139f70c633dba57e8d7ee98d541aeb1e3002099dd28aa24b
+-- hash: 242278afc3ff26ab06aac60f132d9b70b071d6757c7763d6bf804c6cf8260412
 
 name:           moss
 version:        0.1.0.0
@@ -41,25 +41,6 @@ library
     , unix-compat
   exposed-modules:
       Stanford.Moss
-  other-modules:
-      Paths_moss
-  default-language: Haskell2010
-
-executable moss-exe
-  main-is: Main.hs
-  hs-source-dirs:
-      app
-  default-extensions: RecordWildCards OverloadedStrings
-  ghc-options: -threaded -rtsopts -with-rtsopts=-N
-  build-depends:
-      base >=4.7 && <5
-    , bytestring
-    , conduit-extra
-    , moss
-    , mtl
-    , network
-    , network-simple
-    , unix-compat
   other-modules:
       Paths_moss
   default-language: Haskell2010

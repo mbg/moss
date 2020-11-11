@@ -1,16 +1,20 @@
-# moss
+# Haskell client library for Moss
 
-Haskell client library for [Moss](https://theory.stanford.edu/~aiken/moss/).
+![GitHub](https://img.shields.io/github/license/mbg/moss)
+![CI](https://github.com/mbg/moss/workflows/CI/badge.svg)
+[![Hackage](https://img.shields.io/hackage/v/moss)](https://hackage.haskell.org/package/moss)
+
+Haskell client library for [Moss](https://theory.stanford.edu/~aiken/moss/) which is an online service for checking for code similarity, primarily aimed at detecting plagiarism. 
 
 ## Example
 
-In order to use Moss, you need to register on the Moss website. Once you have your access token, using the library is fairly easy:
+In order to use Moss, you need to register on the [Moss website](https://theory.stanford.edu/~aiken/moss/). Once you have your access token, using the library is fairly easy:
 
 ```haskell
 import Stanford.Moss
 
 cfg :: MossCfg
-cfg = defaultMossCfg {
+cfg = defaultMossCfg{
     mossLanguage = Haskell,
     mossUser = "[YOUR ACCESS TOKEN HERE]"
 }

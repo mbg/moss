@@ -1,3 +1,5 @@
 # Changelog for moss
 
-## Unreleased changes
+## 0.1
+
+- Initial release

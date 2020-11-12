@@ -64,43 +64,60 @@ defaultMossCfg = MossCfg {
 
 -- | Enumerates programming languages supported by Moss.
 data Language
-    = C
-    | CPP
-    | Java
-    | CSharp
-    | Python
-    | VisualBasic
-    | Javascript
-    | FORTRAN
-    | ML
-    | Haskell
-    | Lisp
-    | Scheme
-    | Pascal
-    | Modula2
-    | Ada
-    | Perl
-    | TCL
-    | Matlab
-    | VHDL
-    | Verilog
-    | Spice
-    | MIPS
-    | A8086
-    | HCL2
-    deriving (Enum)
+  = C
+  | CPP
+  | Java
+  | CSharp
+  | Python
+  | VisualBasic
+  | Javascript
+  | FORTRAN
+  | ML
+  | Haskell
+  | Lisp
+  | Scheme
+  | Pascal
+  | Modula2
+  | Ada
+  | Perl
+  | Matlab
+  | VHDL
+  | Verilog
+  | Spice
+  | MIPS
+  | A8086
+  | HCL2
+  | ASCII
+  | Prolog
+  | PLSQL
+  deriving (Enum)
 
 instance Show Language where
-    show C       = "c"
-    show CPP     = "cc"
-    show Java    = "java"
-    show ML      = "ml"
-    show Pascal  = "pascal"
-    show Ada     = "ada"
-    show Lisp    = "lisp"
-    show Scheme  = "scheme"
-    show Haskell = "haskell"
-    show FORTRAN = "fortran"
+  show C = "c"
+  show CPP = "cc"
+  show Java = "java"
+  show CSharp = "csharp"
+  show Python = "python"
+  show VisualBasic = "vb"
+  show Javascript = "javascript"
+  show FORTRAN = "fortran"
+  show ML = "ml"
+  show Haskell = "haskell"
+  show Lisp = "lisp"
+  show Scheme = "scheme"
+  show Pascal = "pascal"
+  show Modula2 = "modula2"
+  show Ada = "ada"
+  show Perl = "perl"
+  show Matlab = "matlab"
+  show VHDL = "vhdl"
+  show Verilog = "verilog"
+  show Spice = "spice"
+  show MIPS = "mips"
+  show A8086 = "a8086"
+  show ASCII = "ascii"
+  show Prolog = "prolog"
+  show PLSQL = "plsql"
 
 --------------------------------------------------------------------------------
 

@@ -45,7 +45,7 @@ data MossCfg = MossCfg {
     mossMaxMatches :: Int,
     mossShow       :: Bool,
     mossLanguage   :: Language
-}
+} deriving (Eq, Show)
 
 -- | 'defaultMossCfg' is the default configuration for a Moss connection.
 defaultMossCfg :: MossCfg
@@ -91,7 +91,7 @@ data Language
     | ASCII
     | Prolog
     | PLSQL
-    deriving (Enum)
+    deriving (Eq, Enum)
 
 instance Show Language where
     show C = "c"
@@ -128,7 +128,7 @@ data MossSt = MossSt {
     mossSocket  :: Socket,
     mossCounter :: Int,
     mossCfg     :: MossCfg
-}
+} deriving (Eq, Show)
 
 type Moss = StateT MossSt IO
 

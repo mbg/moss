@@ -1,13 +1,13 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.31.0.
+-- This file has been generated from package.yaml by hpack version 0.33.0.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 242278afc3ff26ab06aac60f132d9b70b071d6757c7763d6bf804c6cf8260412
+-- hash: cdb107d0caf11126d5eefa6f4edb3750c1846dbd80ea9e7df483e783c4bbdac9
 
 name:           moss
-version:        0.1.0.0
+version:        0.2.0.0
 synopsis:       Haskell client for Moss
 description:    Please see the README on Github at <https://github.com/mbg/moss#readme>
 category:       Web

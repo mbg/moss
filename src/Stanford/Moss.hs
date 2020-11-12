@@ -35,7 +35,7 @@ import qualified Data.ByteString.Char8 as C
 
 --------------------------------------------------------------------------------
 
--- | Represents the configuration for a Moss connection.
+-- | Represents configurations for a Moss connection.
 data MossCfg = MossCfg {
     mossServer     :: HostName,
     mossPort       :: ServiceName,
@@ -130,6 +130,7 @@ data MossSt = MossSt {
     mossCfg     :: MossCfg
 } deriving (Eq, Show)
 
+-- | The type of computations which use a connection to Moss.
 type Moss = StateT MossSt IO
 
 -- | 'sendCmd' @socket bytestring@ sends @bytestring@ as a command over the
@@ -162,10 +163,6 @@ withMoss (cfg@MossCfg {..}) m =
                 r <- evalStateT m (MossSt s 1 cfg)
                 sendCmd s "end"
                 return r
-
-{-send = withSocketsDo $ do
-    h <- connectTo mossServer mossPort
-    hClose h-}
 
 -- | 'uploadFile' @index name path@ uploads a file located at @path@ to Moss
 -- and assigns it to the collection of files at @index@ (e.g. representing
@@ -206,7 +203,9 @@ addFilesForStudent fs = do
         uploadFile (mossCounter st) dn fn
     put $ st { mossCounter = mossCounter st + 1 }
 
--- | 'query' @comment@ runs the plagiarism check on all submitted files
+-- | 'query' @comment@ runs the plagiarism check on all submitted files. The
+-- URL of the report is returned if Moss was able to perform the checks
+-- successfully.
 query :: BS.ByteString -> Moss (Maybe BS.ByteString)
 query cmt = do
     s <- gets mossSocket

@@ -80,6 +80,7 @@ data Language
     | Modula2
     | Ada
     | Perl
+    | TCL
     | Matlab
     | VHDL
     | Verilog
@@ -109,6 +110,7 @@ instance Show Language where
     show Modula2 = "modula2"
     show Ada = "ada"
     show Perl = "perl"
+    show TCL = "tcl"
     show Matlab = "matlab"
     show VHDL = "vhdl"
     show Verilog = "verilog"

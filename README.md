@@ -2,6 +2,7 @@
 
 ![GitHub](https://img.shields.io/github/license/mbg/moss)
 ![CI](https://github.com/mbg/moss/workflows/CI/badge.svg)
+![stackage-nightly](https://github.com/mbg/moss/workflows/stackage-nightly/badge.svg)
 [![Hackage](https://img.shields.io/hackage/v/moss)](https://hackage.haskell.org/package/moss)
 
 Haskell client library for [Moss](https://theory.stanford.edu/~aiken/moss/) which is an online service for checking for code similarity, primarily aimed at detecting plagiarism. 

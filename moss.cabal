@@ -1,10 +1,10 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.33.0.
+-- This file has been generated from package.yaml by hpack version 0.34.4.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: cdb107d0caf11126d5eefa6f4edb3750c1846dbd80ea9e7df483e783c4bbdac9
+-- hash: fc2afa3a86a58f07f4d8a6a6beffab808acf24b6897fb81ee01f1e39dd4b7050
 
 name:           moss
 version:        0.2.0.0
@@ -14,8 +14,8 @@ category:       Web
 homepage:       https://github.com/mbg/moss#readme
 bug-reports:    https://github.com/mbg/moss/issues
 author:         Michael B. Gale
-maintainer:     m.gale@warwick.ac.uk
-copyright:      Copyright (c) 2018 Michael B. Gale
+maintainer:     github@michael-gale.co.uk
+copyright:      Copyright (c) 2022 Michael B. Gale
 license:        MIT
 license-file:   LICENSE
 build-type:     Simple
@@ -30,7 +30,9 @@ source-repository head
 library
   hs-source-dirs:
       src
-  default-extensions: RecordWildCards OverloadedStrings
+  default-extensions:
+      RecordWildCards
+      OverloadedStrings
   build-depends:
       base >=4.7 && <5
     , bytestring

@@ -3,8 +3,8 @@ version:             0.2.0.0
 github:              "mbg/moss"
 license:             MIT
 author:              "Michael B. Gale"
-maintainer:          "m.gale@warwick.ac.uk"
-copyright:           "Copyright (c) 2018 Michael B. Gale"
+maintainer:          "github@michael-gale.co.uk"
+copyright:           "Copyright (c) 2022 Michael B. Gale"
 
 extra-source-files:
 - README.md

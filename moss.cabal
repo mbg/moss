@@ -4,10 +4,10 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: fc2afa3a86a58f07f4d8a6a6beffab808acf24b6897fb81ee01f1e39dd4b7050
+-- hash: dd0e0eaf5949b0ee8286722bad8cd85ed2131c0b75e30cc22e343a96de6a5ce2
 
 name:           moss
-version:        0.2.0.0
+version:        0.2.0.1
 synopsis:       Haskell client for Moss
 description:    Please see the README on Github at <https://github.com/mbg/moss#readme>
 category:       Web

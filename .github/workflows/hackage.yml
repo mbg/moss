@@ -1,0 +1,32 @@
+name: hackage
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  publish-to-hackage:
+    name: 'Publish to Hackage'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: haskell/actions/setup@v2
+        id: install-haskell
+        with:
+          stack-no-global: true
+          enable-stack: true
+          stack-version: 'latest'
+
+      - name: Configure stack
+        run: |
+          mkdir -p ${{ steps.install-haskell.outputs.stack-root }}
+          echo "save-hackage-creds: false" >> ${{ steps.install-haskell.outputs.stack-root }}/config.yaml
+
+      - name: Publish `moss`
+        run: stack upload .
+        env:
+          HACKAGE_USERNAME: ${{ secrets.HACKAGE_USER }}
+          HACKAGE_PASSWORD: ${{ secrets.HACKAGE_PASSWORD }}

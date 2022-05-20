@@ -17,12 +17,13 @@ on:
 
 jobs:
     build:
-      strategy: 
+      strategy:
         matrix:
-          resolver: 
-            - stack
+          resolver:
             - stack-lts-12.14
-  
+            - stack-lts-16.1
+            - stack-lts19
+
       runs-on: ubuntu-latest
   
       steps:

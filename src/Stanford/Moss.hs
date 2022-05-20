@@ -21,6 +21,7 @@ module Stanford.Moss (
 --------------------------------------------------------------------------------
 
 import Control.Exception
+import Control.Monad
 import Control.Monad.State
 
 import Data.Monoid

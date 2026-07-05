@@ -28,6 +28,9 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+
     steps:
       - name: "Clone repository"
         uses: actions/checkout@v7

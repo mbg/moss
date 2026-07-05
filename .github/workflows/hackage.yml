@@ -3,12 +3,15 @@ name: hackage
 on:
   push:
     tags:
-      - '*'
+      - "*"
 
 jobs:
   publish-to-hackage:
-    name: 'Publish to Hackage'
+    name: "Publish to Hackage"
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
 
     steps:
       - uses: actions/checkout@v7
@@ -18,7 +21,7 @@ jobs:
         with:
           stack-no-global: true
           enable-stack: true
-          stack-version: 'latest'
+          stack-version: "latest"
 
       - name: Configure stack
         run: |

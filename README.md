@@ -1,11 +1,11 @@
 # Haskell client library for Moss
 
 ![GitHub](https://img.shields.io/github/license/mbg/moss)
-![CI](https://github.com/mbg/moss/workflows/CI/badge.svg)
-![stackage-nightly](https://github.com/mbg/moss/workflows/stackage-nightly/badge.svg)
+[![CI](https://github.com/mbg/moss/actions/workflows/haskell.yml/badge.svg)](https://github.com/mbg/moss/actions/workflows/haskell.yml)
+[![Stackage Nightly](https://github.com/mbg/moss/actions/workflows/stackage-nightly.yml/badge.svg)](https://github.com/mbg/moss/actions/workflows/stackage-nightly.yml)
 [![Hackage](https://img.shields.io/hackage/v/moss)](https://hackage.haskell.org/package/moss)
 
-Haskell client library for [Moss](https://theory.stanford.edu/~aiken/moss/) which is an online service for checking for code similarity, primarily aimed at detecting plagiarism. 
+Haskell client library for [Moss](https://theory.stanford.edu/~aiken/moss/) which is an online service for checking for code similarity, primarily aimed at detecting plagiarism.
 
 ## Example
 
